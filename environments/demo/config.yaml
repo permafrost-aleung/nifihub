@@ -31,7 +31,7 @@ deployments:
             type: HOST_PORT
             mode: EGRESS
             values:
-              - "HOL_POSTGRES:5432"
+              - "4wuas3ho5ja4takbtgu3kjsf24.sfsehol-summit-26-de225-hwjgvs.us-west-2.aws.postgres.snowflake.app:5432"
         flow_registries:
           - name: nifihub
             type: org.apache.nifi.github.GitHubFlowRegistryClient
@@ -72,7 +72,7 @@ deployments:
                 parameter: "Source Database Driver"
             parameters:
               Source Database Publication Name: "demo_publication"
-              Source Database Connection URL: "jdbc:postgresql://HOL_POSTGRES:5432/postgres?sslmode=require"
+              Source Database Connection URL: "jdbc:postgresql://4wuas3ho5ja4takbtgu3kjsf24.sfsehol-summit-26-de225-hwjgvs.us-west-2.aws.postgres.snowflake.app:5432/postgres?sslmode=require"
               Source Database User: "snowflake_admin"
               Source Database Password: "DEMO_DATABASE.POSTGRES.POSTGRES_PWD"
               Included Comma Separated Source Table Names: "demo_postgres.customers,demo_postgres.orders,demo_postgres.order_items"
